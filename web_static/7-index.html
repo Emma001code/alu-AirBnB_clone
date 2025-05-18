@@ -2,77 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-
-    <link rel="stylesheet" href="styles/6-filters.css">
-    <link rel="stylesheet" href="styles/7-places.css">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Explore Destinations</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/filters.css">
+    <link rel="stylesheet" href="styles/places.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Holberton School logo">
-        <div></div>
+    <header class="site-header">
+        <img src="assets/logo.png" alt="Site Logo" class="logo">
+        <nav class="header-nav"></nav>
     </header>
 
-    <div class="container">
-        <section class="filters">
-            
-            <div class="locations">
-                <h3>States</h3>
-                <h4>California, Arizona</h4>
-                <ul class="popover">
-                    <li><h2>Arizona</h2></li>
-                    <ul class="sub-popover">
-                        <li>page</li>
-                        <li>page2</li>
-                    </ul>
-
-                    <li><h2>California</h2></li>
-                    <ul class="sub-popover">
-                        <li>page</li>
-                        <li>page2</li>
-                    </ul>
+    <main class="content-wrapper">
+        <section class="filter-section">
+            <div class="filter-group">
+                <h3>Available States</h3>
+                <h4>Options: Arizona, California</h4>
+                <ul class="dropdown-menu">
+                    <li>
+                        <h5>Arizona</h5>
+                        <ul class="nested-menu">
+                            <li>Page 1</li>
+                            <li>Page 2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>California</h5>
+                        <ul class="nested-menu">
+                            <li>Page 1</li>
+                            <li>Page 2</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            
-            <div class="amenities">
-                <h3>Amenities</h3>
-                <h4>Internet, Kitchen</h4>
-                <ul class="popover">
+
+            <div class="filter-group">
+                <h3>Features</h3>
+                <h4>Selected: Internet, Kitchen</h4>
+                <ul class="dropdown-menu">
                     <li>Internet</li>
-                    <li>TV</li>
-                    <li>Kichen</li>
+                    <li>Television</li>
+                    <li>Kitchen</li>
                     <li>Iron</li>
                 </ul>
             </div>
-            <div></div>
-            <button>Search</button>
+
+            <button class="search-button">Find Places</button>
         </section>
-        <section class="places">
-            <h1>Places</h1>
-            <div class="places-list">
-           
-            <article>
-                <h2>My home</h2>
-            </article>
-            <article>
-                <h2>Tiny house</h2>
-            </article>
-            <article>
-                <h2>A suite</h2>
-            </article>
-        </div>
+
+        <section class="places-section">
+            <h1>Explore Listings</h1>
+            <div class="listing-container">
+                <article class="listing-item">
+                    <h2>Cozy Home</h2>
+                </article>
+                <article class="listing-item">
+                    <h2>Modern Tiny House</h2>
+                </article>
+                <article class="listing-item">
+                    <h2>Luxury Suite</h2>
+                </article>
+            </div>
         </section>
-    </div>
-    <footer>
-        <div>
-            <p>Holberton School</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Explore Destinations</p>
         </div>
     </footer>
 </body>
 </html>
+
